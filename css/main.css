@@ -54,7 +54,6 @@ textarea {
 :root {
   --sans-font-family: 'Roboto', sans-serif;
   --serif-font-family: 'Roboto Slab', 'Courier New', monospace;
-  --
 }
 
 html {
@@ -71,6 +70,9 @@ body {
   background-color: #ffffff;
   color: #333333;
   margin: 0;
+  max-width: 100%;
+  border: 1px solid blue;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -122,6 +124,31 @@ a {
 }
 .main-nav li:hover {
   background-color: #222222;
+}
+
+.page-header {
+  padding: 7em 2em 4em;
+  text-align: center;
+  background: url('../img/textureoflondon.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-header-contents {
+  max-width: 16rem;
+  background: #EBEBE0;
+  padding: 1em;
+  margin: auto;
+}
+.page-header h1 {
+  max-width: 10rem;
+  margin: 0.5em auto;
+  font-size: 2.5rem;
+}
+.page-header p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #84C2B4;
+  text-align: center;
 }
 
 #about {
@@ -259,7 +286,6 @@ h2 {
 	line-height: 2.4em;
 	text-align: center;
 	margin-left: 65%;
-	/*width: 20%;*/
 }
 
 h3 {
@@ -274,13 +300,6 @@ h4	{
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1em;
-}
-
-p {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	padding-right: 170px;
-	line-height: 1.8em;
 }
 
 #address p {
@@ -482,9 +501,6 @@ footer	{
 **/
 @media only screen and (min-width: 30rem) {
   /* .main-nav */
-  .main-nav {
-    border: 1px solid yellow;
-  }
   .main-nav h2 {
     display: none;
   }
