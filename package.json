@@ -1,0 +1,23 @@
+{
+  "name": "theemzo.com",
+  "version": "0.1.0",
+  "description": "Emily Ward's Website",
+  "main": "index.js",
+  "scripts": {
+		"dev": "browser-sync start --server --files .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emward/theemzo.com.git"
+  },
+  "author": "James Johnson <james_johnson@mcad.edu> (https://james.mn)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emward/theemzo.com/issues"
+  },
+  "homepage": "https://github.com/emward/theemzo.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
