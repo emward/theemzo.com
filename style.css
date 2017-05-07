@@ -1,0 +1,309 @@
+body {
+    /* background-image: url("images/background_image.png");
+    background-repeat: repeat-x; */
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+nav li {
+    float: left;
+    width: 9%;
+    font-size: 14px;
+}
+
+nav li a {
+    display: block;
+    color: #80C2B3;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #222222;
+}
+
+#about {
+	background-color: #9DDCCE;
+	margin-top: -15px;
+	height: auto;
+	padding-left: 80px;
+}
+
+.float 	{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	line-height: 1.4em;
+	padding-top: 40px;
+	padding-right: 25px;
+	float: left;
+}
+
+#portfolio {
+	background-color: #EBEBE0;
+	margin-top: -15px;
+	height: 600px;
+	padding-left: 80px;
+}
+
+#contact {
+	background-color: #80C2B3;
+	margin-top: -15px;
+	height: 560px;
+	padding-left: 80px;
+}
+
+form	{
+	background-color: #9DDCCE;
+	padding: 25px;
+	width: 40%;
+	margin-top: 0;
+	margin-top: -38px;
+	float: left;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0;
+	padding: 5px;
+}
+
+input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width: 92%;
+	border: 1px solid #333333;
+	background: #FFFFFF;
+	opacity: .7;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+textarea {
+	height: 100px;
+	max-width: 100%;
+  	resize: none;
+}
+
+button {
+	background: #333333;
+	color: #FFFFFF;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	border: none;
+	letter-spacing: 1px;
+	font-size: 18px;
+	width: 30%;
+	padding: 10px;
+}
+
+button:hover {
+	background: #000000;
+}
+
+#welcome	{
+	background: url(images/textureoflondon_16.png) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	 -o-background-size: cover;
+  	background-size: cover;
+  	height: 500px;
+}
+
+#welcome header	{
+	width: 30%;
+	height: 200px;
+	text-align: center;
+	padding-top: 155px;
+	margin-left: 34%;
+	opacity: 0.95;
+}
+
+#welcome h1	{
+	color: #333333;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 42px;
+	padding-top: 30px;
+	background-color: #EBEBE0;
+}
+	
+#welcome span	{
+	display: block;
+	color: #80C2B3;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 25px;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	color: #333333;
+	line-height: 1em;
+	font-size: 1.4em;
+}
+
+h2 {
+	z-index: 1;
+	display: block;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #333333;
+	line-height: 2.4em;
+	text-align: center;
+	margin-left: 65%;
+	width: 20%;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 1.4em;
+}
+
+h4	{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1em;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding-right: 170px;
+	line-height: 1.8em;
+}
+
+#address p {
+	line-height: 1em;
+}
+
+.personal-info {
+	color: #EBEBE0;
+}
+
+p a {
+	text-decoration: none;
+	color: #333333;
+	font-weight: 500;
+}
+
+.last-paragraph	{
+	padding-bottom: 65px;
+}
+
+.circular-square {
+  	width: 175px;
+  	height: 175px;
+  	border-radius: 50%;
+  	border: 1px solid #ffffff;
+	margin-top: -40px;
+}
+
+.work1	{
+	float: left;
+}
+
+.work2	{
+	float: left;
+	margin-left: -110px;
+	margin-right: 0px;
+}
+
+.work3	{
+	float: left;
+	margin-left: -95px;
+	margin-right: 0px;
+}
+
+.thumbnail-image	{
+	border: 1px solid #ffffff;
+}
+
+#address	{
+	width: 43%;
+	margin-top: 15px;
+	float: right;
+}
+
+#social	{
+	width: 44%;
+	margin-top: 180px;
+	float: right;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.fa:hover {
+    background: #000000;
+}
+
+.fa-facebook {
+    background: #333333;
+    color: white;
+}
+
+.fa-twitter {
+    background: #333333;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #333333;
+    color: white;
+}
+
+.fa-instagram {
+    background: #333333;
+    color: white;
+}
+
+.fa-github {
+    background: #333333;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer	{
+	font-weight: 300;
+	font-size: 10px;
+	text-align: center;
+	margin-left: 15%;
+	float: clear;
+
+}
+
