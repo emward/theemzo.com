@@ -72,7 +72,6 @@ body {
   color: #333333;
   margin: 0;
 }
-
 a {
   text-decoration: none;
   font-weight: 500;
@@ -101,7 +100,6 @@ a {
 .main-nav.is-open ul {
   display: block;
 }
-
 .main-nav li {
   margin: 0;
 
@@ -482,8 +480,20 @@ footer	{
 /**
 * Responsive
 **/
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 30rem) {
+  /* .main-nav */
+  .main-nav {
+    border: 1px solid yellow;
+  }
+  .main-nav h2 {
+    display: none;
+  }
+  .main-nav ul {
+    display: block;
+  }
+  .main-nav li {
+    display: inline-block;
+  }
 }
 
 @media print,
