@@ -20,13 +20,15 @@
   <![endif]-->
 
 <nav class="main-nav">
-  <h2 class="js-menu-btn">Menu</h2>
-  <ul>
-    <li><a href="#welcome">home</a></li>
-    <li><a href="#about">about</a></li>
-    <li><a href="#portfolio">portfolio</a></li>
-    <li><a href="#contact">contact</a></li>
-  </ul>
+  <div class="container">
+    <h2 class="js-menu-btn">Menu</h2>
+    <ul>
+      <li><a href="#welcome">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
 </nav>
 
 	<header class="page-header">
@@ -34,94 +36,114 @@
 				<h1>emily ward</h1>
 				<p>digital design | web design</p>
 			</div>
-	</header>
+	</header><!-- .page-section -->
 
-	<section id="about"><!--About Section-->
+	<section id="about" class="page-section section-bio">
+    <div class="container">
+      <h2 class="page-section-heading">hello, world.</h2>
 
-			<header>
-				<h2>hello, world.</h2>
-				<img class="circular-square"src="img/emily.jpg">
-				<h3 class="float">My name is Emily. <br>Pleased to meet you.</a></h3>
-			</header>
+      <header>
+        <h3>
+          My name is Emily.<br>
+          Pleased to meet you.
+        </h3>
+        <img class="bio-image" src="img/emily.jpg" alt="It's meee!!! Emily Ward!">
+      </header>
+
 			<p>I'm a creative, resourceful Senior Digital Designer who loves clean lines, challenging projects and the pursuit of the perfect solution. I have a wide variety of experience including web design, UX design, front-end development, art direction, email design and development, eCommerce, social media and other digital design. With a Bachelor of Arts degree in Graphic Design and a Post-Baccalaureate Certificate in Interactive Design &amp; Marketing from <a href="http://mcad.edu/">MCAD</a>, I bring 12 years of work experience and education to my designs.</p>
+
 			<p>I'm a lover of cats, coffee, the outdoors and Italian food. I never say no to a good beer flight or <a href="http://baldmanbrewing.com/">brewery</a>, which I like to post up on <a href="https://www.instagram.com/the_emzo/">Instagram</a>. I live and work in the Twin Cities area with my husband and two cats. We love to travel and enjoy exploring new places and cultures. I'm also an avid reader, which I celebrate with a membership to a two-person bookclub. I can be found most nights at a yoga class, or teaching Zumba. I've been a certified instructor for about 7 years.</p>
-			<p class="last-paragraph">For more about my work history and education, you can download a copy of my resume <a href="files/eward_resume_2017.pdf">here.</a></p>
+
+			<p>For more about my work history and education, you can download a copy of my resume <a href="files/eward_resume_2017.pdf">here.</a></p>
+    </div><!-- .container -->
+	</section><!-- .page-section .section-bio -->
+
+	<section id="portfolio" class="page-section section-featured">
+    <div class="container">
+      <h2 class="page-section-heading">featured work.</h2>
+      <h3>Check out some of what I've been up to recently.</h3>
+
+      <div class="grid">
+			  <article class="grid-item">
+				  <img class="thumb" src="img/FB_Post_Thumbnail.png" alt="Social Post Sample">
+          <h4 class="grid-item-title">
+            TITLE HERE
+          </h4>
+          <p>Clean, creative design for simple social posts.</p>
+        </article>
+        <article class="grid-item">
+				  <img class="thumb" src="img/FB_CubEmail_Thumbnail.png" alt="Social Post Sample">
+          <h4 class="grid-item-title">
+            TITLE HERE
+          </h4>
+          <p>Responsive email design and development.</p>
+        </article>
+        <article class="grid-item">
+				  <img class="thumb" src="img/FB_CarouselAd_Thumbnail.png" alt="Social Post Sample">
+          <h4 class="grid-item-title">TITLE HERE</h4>
+          <p>Fun, themed carousel ads for Facebook.</p>
+        </article>
+        <article class="grid-item">
+				  <img class="thumb" src="img/FB_Post_Thumbnail.png" alt="Social Post Sample">
+          <h4 class="grid-item-title">TITLE HERE</h4>
+          <p>Clean, creative design for simple social posts.</p>
+        </article>
+        <article class="grid-item">
+				  <img class="thumb" src="img/FB_CubEmail_Thumbnail.png" alt="Social Post Sample">
+          <h4 class="grid-item-title">TITLE HERE</h4>
+          <p>Responsive email design and development.</p>
+        </article>
+        <article class="grid-item">
+				  <img class="thumb" src="img/FB_CarouselAd_Thumbnail.png" alt="Social Post Sample">
+          <h4 class="grid-item-title">TITLE HERE</h4>
+          <p>Fun, themed carousel ads for Facebook.</p>
+        </article>
+    </div>
+	</section><!-- .page-section .section-grid -->
+
+	<section class="page-section section-contact" id="contact">
+    <div class="container">
+      <h2 class="page-section-heading">get in touch.</h2>
+      <div class="col">
+				<form class="contact-form" method="POST" action="mailto:wardet31@gmail.com">
+          <h3>Contact Me.</h3>
+    			<p>I love meeting new people! If you like my work, introduce yourself.</p>
+
+          <div class="input-group">
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </div>
+          <div class="input-group">
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </div>
+          <div class="input-group">
+            <input placeholder="Your Phone Number" type="tel" tabindex="3">
+          </div>
+
+          <textarea placeholder="Type your Message Here." tabindex="5" required></textarea>
+
+          <button name="submit" type="submit">submit</button>
+        </form>
+      </div><!-- .col -->
+
+      <div class="col">
+        <h3>Emily Ward</h3>
+        <p><a href="tel:651-231-5891">651.231.5891</a></p>
+        <p><a href="mailto:wardet31@gmail.com">wardet31@gmail.com</a></p>
+      </div><!-- .col -->
+    </div><!-- .container -->
 	</section>
 
-	<section id="portfolio"><!--Portfolio Section-->
-			<header>
-				<h2>featured work.</h2>
-				<h3>Check out some of what I've been up to recently.</h3>
-			</header>
-
-			<section class="work1">
-				<img class="thumbnail-image"src="img/FB_Post_Thumbnail.png" alt="Social Post Sample" height="200" width="auto">
-				<p>Clean, creative design for simple social posts.</p>
-			</section>
-
-			<section class="work2">
-				<img class="thumbnail-image"src="img/FB_CubEmail_Thumbnail.png" alt="Seasonal Email Sample" height="200" width="auto">
-				<p>Responsive email design and development.</p>
-			</section>
-
-			<section class="work3">
-				<img class="thumbnail-image"src="img/FB_CarouselAd_Thumbnail.png" alt="Carousel Ad Sample" height="200" width="auto">
-				<p>Fun, themed carousel ads for Facebook.</p>
-			</section>
-
-	</section>
-
-	<section id="contact"><!--Contact Section-->
-			<header>
-				<h2>get in touch.</h2>
-			</header>
-
-				<form action="mailto:wardet31@gmail.com">
-
-    				<h3>Contact Me.</h3>
-    				<h4>I love meeting new people! If you like my work, introduce yourself.</h4>
-
-    					<fieldset>
-      						<input placeholder="Your name" type="text" tabindex="1" required autofocus>
-    					</fieldset>
-
-    					<fieldset>
-      						<input placeholder="Your Email Address" type="email" tabindex="2" required>
-    					</fieldset>
-
-    					<fieldset>
-      						<input placeholder="Your Phone Number" type="tel" tabindex="3">
-    					</fieldset>
-
-    					<fieldset>
-      						<textarea placeholder="Type your Message Here." tabindex="5" required></textarea>
-    					</fieldset>
-
-    					<fieldset>
-      						<button name="submit" type="submit">submit</button>
-    					</fieldset>
-  				</form>
-
-  			<div id="address">
-  					<h3>Emily Ward</h3>
-  					<p>3954 Cinnabar Drive, Eagan, MN 55122</p>
-  					<p class="personal-info">[phone] 651.231.5891</p>
-  					<p class="personal-info">[email] <a href="mailto:wardet31@gmail.com">wardet31@gmail.com</a></p>
-
-			</div>
-
-  			<div id="social">
-  					<a href="https://www.instagram.com/the_emzo" class="fa fa-instagram"></a>
-  					<a href="https://www.facebook.com/wardet" class="fa fa-facebook"></a>
-					<a href="https://twitter.com/the_emzo" class="fa fa-twitter"></a>
-					<a href="https://www.linkedin.com/in/emward" class="fa fa-linkedin"></a>
-					<a href="https://github.com/emward" class="fa fa-github"></a>
-			</div>
-
-	</section>
-
-	<footer>
-		<p>Copyright &copy;2017 Emily Ward | Digital and Web Design. All rights reserved.</p>
+	<footer class="page-footer">
+    <div class="container">
+      <ul class="social-media">
+        <li><a href="https://www.instagram.com/the_emzo" class="fa fa-instagram"></a></li>
+        <li><a href="https://www.facebook.com/wardet" class="fa fa-facebook"></a></li>
+        <li><a href="https://twitter.com/the_emzo" class="fa fa-twitter"></a></li>
+        <li><a href="https://www.linkedin.com/in/emward" class="fa fa-linkedin"></a></li>
+        <li><a href="https://github.com/emward" class="fa fa-github"></a></li>
+      </ul>
+      <p>&copy; 2017 Emily Ward | Digital and Web Design. All rights reserved.</p>
+    </div>
 	</footer>
 
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

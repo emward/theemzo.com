@@ -54,6 +54,7 @@ textarea {
 :root {
   --sans-font-family: 'Roboto', sans-serif;
   --serif-font-family: 'Roboto Slab', 'Courier New', monospace;
+  --placeholder-text-color: #ccc;
 }
 
 html {
@@ -68,17 +69,24 @@ body {
   font-weight: 300;
   line-height: 1.4;
   background-color: #ffffff;
-  color: #333333;
+  color: #333;
   margin: 0;
   max-width: 100%;
-  border: 1px solid blue;
   overflow-x: hidden;
 }
 a {
+  color: #333;
   text-decoration: none;
-  font-weight: 500;
+  border-bottom: 1px solid #333;
+}
+img {
+  max-width: 100%;
 }
 
+.container {
+  max-width: 60rem;
+  margin: auto;
+}
  /*.main-nav */
 .main-nav {
   --nav-text-color: #80C2B3;
@@ -126,6 +134,9 @@ a {
   background-color: #222222;
 }
 
+/**
+* .page-header
+**/
 .page-header {
   padding: 7em 2em 4em;
   text-align: center;
@@ -138,8 +149,11 @@ a {
   background: #EBEBE0;
   padding: 1em;
   margin: auto;
+  border: 0.25rem solid #fff;
 }
 .page-header h1 {
+  font-family: var(--serif-font-family);
+  line-height: 1;
   max-width: 10rem;
   margin: 0.5em auto;
   font-size: 2.5rem;
@@ -151,7 +165,242 @@ a {
   text-align: center;
 }
 
-#about {
+/* .page-section */
+.page-section {
+  border-top: #fff solid 0.25em;
+  position: relative;
+}
+.page-section .container {
+  position: relative;
+  padding: 1em;
+  padding-top: 5rem;
+}
+.page-section .page-section-heading {
+  margin: 0;
+  font-family: var(--serif-font-family);
+  padding: 0.5em 1em;
+  background-color: #333333;
+  color: #fff;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+.page-section h3 {
+  font-size: 1.5em;
+}
+
+/**
+* .section-bio
+*/
+.section-bio h3 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-right: 1em;
+}
+.section-bio {
+  background-color: #9DDCCE;
+}
+.section-bio header {
+  display: flex;
+  align-items: flex-end;
+}
+.bio-image {
+  display: block;
+  border-radius: 50%;
+  border: 0.125em solid #fff;
+}
+
+/**
+* .section-grid
+*/
+.section-featured {
+  background: #EBEBE0;
+}
+
+.grid-item {
+  margin: 1em 0;
+  background: #fff;
+  padding: 0.5rem;
+}
+.grid-item-title {
+  margin: 0.5rem 0 0;
+}
+.grid-item .thumb {
+  display: block;
+}
+.grid-item p {
+  margin: 0;
+}
+
+/**
+* .section-contact
+**/
+.section-contact {
+  background: #80C2B3;
+}
+.section-contact .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.section-contact .col {
+  margin: 0 1rem;
+}
+/**
+* .contact-form
+*/
+.contact-form {
+  background: #9DDCCE;
+  padding: 1rem;
+}
+.contact-form h3 {
+  margin-top: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 20em;
+  border: 1px solid #666;
+  padding: 0.5em;
+  background: hsla(100,100%,100%, 0.9);
+}
+textarea {
+  min-height: 10em;
+}
+.input-group {
+  margin: 0.5em 0;
+}
+
+.contact-form button {
+  font-family: var(--serif-font-family);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  display: block;
+  padding: 0.5em 2em;
+  background: #333;
+  color: #fff;
+  border: 0;
+}
+.contact-form button:hover {
+  background: #222;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--placeholder-text-color);
+  text-transform: uppercase;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: var(--placeholder-text-color);
+  text-transform: uppercase;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: var(--placeholder-text-color);
+  text-transform: uppercase;
+
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--placeholder-text-color);
+  text-transform: uppercase;
+}
+
+.page-footer {
+  background-color: #333;
+  color: #bbb;
+  text-align: center;
+}
+.page-footer a {
+  color: #bbb;
+}
+.page-footer a:hover {
+  color: #fff;
+}
+.page-footer .container {
+  padding: 1rem;
+}
+
+/**
+* .social-media
+**/
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-media li {
+  display: inline-block;
+}
+.social-media a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+
+
+/**
+* Responsive
+**/
+@media only screen and (min-width: 30rem) {
+  /* .main-nav */
+  .main-nav h2 {
+    display: none;
+  }
+  .main-nav ul {
+    display: block;
+  }
+  .main-nav li {
+    display: inline-block;
+  }
+  .page-header {
+    padding: 10em 4em 8em;
+  }
+  .page-header-contents {
+    max-width: 23rem;
+  }
+  .page-header h1 {
+    font-size: 3.5rem;
+  }
+  .page-header p {
+    font-size: 1.25rem;
+  }
+  /**
+   * .section-grid (e.g. "featured work")
+   */
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .grid-item {
+    width: 49%;
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 42em) {
+  .page-section-heading {
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .page-section .container {
+    padding-top: 4rem;
+  }
+  .grid-item {
+    width: 32%;
+  }
+  .section-contact .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-contact .col {
+    width: 49%;
+  }
+}
+
+/*#about {
 	background-color: #9DDCCE;
 	margin-top: -15px;
 	height: auto;
@@ -229,45 +478,6 @@ button:hover {
 	background: #000000;
 }
 
-#welcome	{
-	background: url('../img/textureoflondon_1024x682.jpg') no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
- 	 -o-background-size: cover;
-  	background-size: cover;
-  	height: 500px;
-}
-
-#welcome header	{
-	width: 30%;
-	height: 200px;
-	text-align: center;
-	padding-top: 155px;
-	margin-left: 34%;
-	opacity: 0.95;
-}
-
-#welcome h1	{
-	color: #333333;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 400;
-	font-size: 42px;
-	padding-top: 30px;
-	background-color: #EBEBE0;
-}
-
-#welcome span	{
-	display: block;
-	color: #80C2B3;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	padding-top: 5px;
-	padding-bottom: 25px;
-}
-
 h1 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
@@ -277,7 +487,6 @@ h1 {
 }
 
 h2 {
-	z-index: 1;
 	display: block;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
@@ -412,7 +621,7 @@ footer	{
 	margin-left: 15%;
 	float: clear;
 
-}
+}*/
 
 
 
@@ -494,22 +703,6 @@ footer	{
 
 .clearfix:after {
     clear: both;
-}
-
-/**
-* Responsive
-**/
-@media only screen and (min-width: 30rem) {
-  /* .main-nav */
-  .main-nav h2 {
-    display: none;
-  }
-  .main-nav ul {
-    display: block;
-  }
-  .main-nav li {
-    display: inline-block;
-  }
 }
 
 @media print,
