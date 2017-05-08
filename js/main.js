@@ -9,4 +9,6 @@ $(document).ready(function () {
       $('.main-nav').removeClass('is-open');
     }
   });
+
+  $('.carousel').slick();
 });

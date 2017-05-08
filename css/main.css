@@ -336,6 +336,85 @@ textarea {
 }
 
 
+/***************
+* .project-page
+*/
+
+.project-page main {
+  background-image: linear-gradient(
+    to bottom,
+   #fff 33%,
+   #EBEBE0 33%,
+   #EBEBE0);
+}
+
+.project-page .carousel {
+  min-height: 20rem;
+  background: #ccc;
+}
+.project-page .project-name {
+  background: #333;
+  color: #fff;
+  font-family: var(--serif-font-family);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  margin: 0 0 0 1rem;
+  max-width: 66%;
+}
+
+/**
+* carousel
+*/
+.carousel {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+.carousel img {
+  width: 100%;
+}
+
+.slick-arrow {
+  border: none;
+  background: #ccc;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  padding: 1em;
+}
+.slick-arrow:hover {
+  background: #333;
+  color: #fff;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev,
+.slick-next {
+  width: auto;
+  height: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 2rem;
+  padding: 1rem;
+
+}
+.slick-prev:before {
+  content: "\f053";
+}
+.slick-next:before {
+  content: "\f054";
+}
+
 
 /**
 * Responsive
@@ -374,6 +453,9 @@ textarea {
   .grid-item {
     width: 49%;
     margin-bottom: 1em;
+  }
+  .project-page .project-name {
+    max-width: 50%;
   }
 }
 
