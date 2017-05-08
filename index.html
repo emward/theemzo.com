@@ -107,21 +107,21 @@
     <div class="container">
       <h2 class="page-section-heading">get in touch.</h2>
       <div class="col">
-				<form class="contact-form" method="POST" action="mailto:wardet31@gmail.com">
+				<form class="contact-form" method="POST" action="http://formspree.io/wardet31@gmail.com">
           <h3>Contact Me.</h3>
     			<p>I love meeting new people! If you like my work, introduce yourself.</p>
 
           <div class="input-group">
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
           </div>
           <div class="input-group">
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
           </div>
           <div class="input-group">
-            <input placeholder="Your Phone Number" type="tel" tabindex="3">
+            <input placeholder="Your Phone Number" name="phone" type="tel" tabindex="3">
           </div>
 
-          <textarea placeholder="Type your Message Here." tabindex="5" required></textarea>
+          <textarea placeholder="Type your Message Here." name="message" tabindex="5" required></textarea>
 
           <button name="submit" type="submit">submit</button>
         </form>
