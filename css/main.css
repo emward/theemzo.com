@@ -149,7 +149,7 @@ img {
   background: #EBEBE0;
   padding: 1em;
   margin: auto;
-  border: 0.25rem solid #fff;
+  border: 0.125rem solid #fff;
 }
 .page-header h1 {
   font-family: var(--serif-font-family);
@@ -159,7 +159,7 @@ img {
 }
 .page-header p {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: lighter;
   color: #84C2B4;
   text-align: center;
 }
@@ -222,16 +222,19 @@ img {
 .grid-item {
   margin: 1em 0;
   background: #fff;
-  padding: 0.5rem;
+  padding: 0.125rem;
 }
 .grid-item-title {
   margin: 0.5rem 0 0;
+  padding-left: 0.5rem;
 }
 .grid-item .thumb {
   display: block;
 }
 .grid-item p {
   margin: 0;
+  padding-left: 0.5rem;
+  padding-bottom: .5rem;
 }
 
 /**
@@ -261,7 +264,7 @@ img {
 input,
 textarea {
   width: 100%;
-  max-width: 20em;
+  max-width: 30em;
   border: 1px solid #666;
   padding: 0.5em;
   background: hsla(100,100%,100%, 0.9);
@@ -309,6 +312,9 @@ textarea {
   background-color: #333;
   color: #bbb;
   text-align: center;
+}
+.page-footer p {
+  font-size: 12px;
 }
 .page-footer a {
   color: #bbb;
