@@ -357,7 +357,6 @@ textarea {
 }
 
 .project-page .carousel {
-  min-height: 20rem;
   background: #ccc;
 }
 .project-page .project-name {
@@ -390,7 +389,7 @@ textarea {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 90;
   padding: 1em;
 }
 .slick-arrow:hover {
@@ -412,7 +411,7 @@ textarea {
 .slick-next:before {
   font-family: "FontAwesome";
   display: block;
-  font-size: 2rem;
+  font-size: 1.25rem;
   padding: 1rem;
 
 }
