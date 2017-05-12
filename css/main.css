@@ -91,11 +91,12 @@ img {
 .main-nav {
   --nav-text-color: #80C2B3;
   background-color: #333333;
+  opacity: .95;
   color: var(--nav-text-color);
   text-transform: uppercase;
   margin: 0;
   line-height: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
